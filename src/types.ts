@@ -1,4 +1,4 @@
-export type IngredientListChar =
+export type IngredientList =
   | "a"
   | "b"
   | "c"
@@ -39,7 +39,3 @@ export type Request = {
     value: string;
   }[];
 };
-
-export type GroupIngredientsRequest = {
-  list?: IngredientListChar;
-} & Request;
