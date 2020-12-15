@@ -38,7 +38,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format && yarn build && yarn eslint"
+      "pre-commit": "yarn format && yarn build && yarn eslint && yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "eslintConfig": {
